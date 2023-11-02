@@ -634,6 +634,13 @@ type GenericTamaguiSettings = {
    * Then this feature is safe to turn on and will significantly speed up dark/light re-renders.
    */
   fastSchemeChange?: boolean
+
+  /**
+   * On Web, this allows changing the behavior of container groups which by default uses
+   * `container-type: inline-size;`. Allows changing the container type to any of the
+   * valie CSS values
+   */
+  webContainerType?: 'normal' | 'size' | 'inline-size' | 'inherit' | 'initial' | 'revert' | 'revert-layer' | 'unset'
 }
 
 export type TamaguiSettings = TamaguiConfig['settings']

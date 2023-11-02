@@ -1,12 +1,41 @@
 // import './wdyr'
 
 import { View } from 'react-native'
-import { GetProps, Square, Stack, styled } from 'tamagui'
+import { GetProps, Square, Stack, styled, Button } from 'tamagui'
 
 export const Sandbox = () => {
   return (
-    <View style={{ width: '100%', height: '100%', padding: 50 }}>
-      <>{/* ok */}</>
+    <View style={{ width: '100%', height: 100, padding: 50, flexDirection:'row' }}>
+      <Button group='ButtonContextGroup'  bc='green'>
+        <Button.Text 
+        $group-ButtonContextGroup-hover={{
+          color: 'red',
+        }} 
+        fontFamily={'$body'} 
+        >
+          ??
+      </Button.Text>
+      </Button>
+      <Button group='ButtonContextGroup'  bc='green'>
+        <Button.Text 
+        $group-ButtonContextGroup-hover={{
+          color: 'red',
+        }} 
+        fontFamily={'$body'} 
+        >
+          ??
+      </Button.Text>
+      </Button>
+      <Button group='ButtonContextGroup'  bc='green'>
+        <Button.Text 
+        $group-ButtonContextGroup-hover={{
+          color: 'red',
+        }} 
+        fontFamily={'$body'} 
+        >
+          ??
+      </Button.Text>
+      </Button>
     </View>
   )
 }
