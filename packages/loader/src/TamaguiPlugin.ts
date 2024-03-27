@@ -118,6 +118,12 @@ export class TamaguiPlugin {
               ['react-native$', 'react-native-web'],
               ['react-native-web$', 'react-native-web'],
             ]),
+        // @ts-expect-error deprecated
+        ...(this.options.useTamaguiReactNativeSvg
+          ? [
+              ['react-native-svg', '@tamagui/react-native-svg'],
+            ]
+          : []),
       ])
     )
   }

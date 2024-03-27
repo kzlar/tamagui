@@ -140,7 +140,11 @@ export interface TamaguiBuildOptions {
    * combine all css files into one file
    */
   emitSingleCSSFile?: boolean
-
+  /**
+   * Use @tamagui/react-native-svg
+   */
+  useTamaguiReactNativeSvg?: boolean
+  
   /**
    * @deprecated Deprecated, just leave it off
    */
