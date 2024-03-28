@@ -3,7 +3,7 @@ import { getDefaultLayout } from '@lib/getDefaultLayout'
 import { Community } from '@tamagui/site/components/HeroCommunity'
 import { FeaturesGrid } from '@tamagui/site/components/HeroFeaturesGrid'
 import { NextSeo } from 'next-seo'
-import { YStack } from 'tamagui'
+import { Theme, YStack } from 'tamagui'
 
 import { HeroBelow } from '../components/HeroBelow'
 import { HeroExampleAnimations } from '../components/HeroExampleAnimations'
@@ -20,6 +20,11 @@ import { getCompilationExamples } from '../lib/getCompilationExamples'
 import { ThemeTint } from '@tamagui/logo'
 
 export default function Home({ animationCode, compilationExamples }) {
+  return (
+    <Theme name={'dark'}>
+  <Hero />
+  </Theme>
+  )
   return (
     <>
       <ThemeNameEffect colorKey="$color2" />
